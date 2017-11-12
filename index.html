@@ -5,6 +5,7 @@
 <head>
  
   <title>Ping Pong Scoreboard</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
  
 </head>
  
@@ -12,51 +13,57 @@
  
   <div id="Content">
  
-    <div id="PlayerNames">
+    <div id="PlayerNames" class="Wrappers">
  
-      <div id="Player1Name">
+      <div id="Player1Name" class="LeftSections">
  
         <h1>Player 1</h1>
  
       </div>
  
-      <div id="Player2Name">
+      <div id="Player2Name" class="RightSections">
  
         <h1>Player 2</h1>
  
       </div>
  
     </div>
- 
-    <div id="PlayerScores">
- 
-      <div id="Player1Score">
- 
-        <h1>0</h1>
- 
-      </div>
- 
-      <div id="Player2Score">
- 
-        <h1>0</h1>
- 
-      </div>
- 
-    <div id="ControlButtons">
- 
-      <div id="Player1Buttons">
- 
-        <h1>0</h1>
- 
-      </div>
- 
-      <div id="Player2Buttons">
- 
-        <h1>0</h1>
- 
-      </div>
- 
-    </div>
+
+    <div id="LowerContent">
+	    <div id="LeftPlayerContent" class="Wrappers">
+	 
+	      <div id="Player1Score" class="LeftSections">
+	 
+	        <h1>0</h1>
+	 
+	      </div>
+	 
+
+	 	  <div id="Player1Buttons" class="LeftSections">
+	 
+	        <button type="button" class="Buttons PlusButton">+</button>
+	        <button type="button" class="Buttons">-</button>
+
+	      </div>
+	      
+	 	</div>
+	    <div id="RightPlayerContent" class="Wrappers">
+	 	  
+	 	  <div id="Player2Score" class="RightSections">
+	 
+	        <h1>0</h1>
+	 
+	      </div>
+
+	      <div id="Player2Buttons" class="RightSections">
+	 
+	        <button type="button" class="Buttons PlusButton">+</button>
+	        <button type="button" class="Buttons">-</button>
+	 
+	      </div>
+		 
+		</div>
+	</div>
  
   </div>
  

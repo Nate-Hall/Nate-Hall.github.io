@@ -1,0 +1,74 @@
+body {
+	background-color: #F6F6F6
+}
+
+#Content {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 150%;
+}
+
+.Wrappers {
+	clear: both;
+}
+
+#Player1Name {
+	float: left;
+	background-color: #F6F6F6;
+	color: blue;
+}
+
+#Player2Name {
+	float: right;
+	background-color: #F6F6F6;
+	color: red;
+}
+
+#PlayerScores {
+	font-size: 200%;
+}
+
+#LowerContent {
+	float: left;
+}
+
+.LeftSections {
+	width: 400px;
+	padding: 40px 0px;
+}
+
+.RightSections {
+	width: 400px;
+	padding: 40px 0px;
+}
+
+.Buttons {
+	font-size: 200%;
+	color: white;
+}
+
+.LeftSections .Buttons {
+	background-color: blue;
+}
+
+.RightSections .Buttons {
+	background-color: red;
+}
+
+.PlusButton {
+	padding: 15px 32px;
+}
+
+#LeftPlayerContent {
+	float: left;
+	border: 1px solid blue;
+	border-radius: 30px;
+}
+
+#RightPlayerContent {
+	float: right;
+	border: 1px solid red;
+	border-radius: 30px;
+}
