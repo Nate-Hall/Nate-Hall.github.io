@@ -35,14 +35,15 @@ function AddPoint(pointAmount, playerNum) {
 
 			if(scores[playerNum] < 0) {
 				scores[playerNum] = 0;
-			}
+			} else {
 
-			var sumScores = scores[0] + scores[1];
-			if((sumScores < 20 && sumScores % 2 == 0) || sumScores > 20) {
-				if(currentServer == 0) {
-					currentServer = 1;
-				} else {
-					currentServer = 0;
+				var sumScores = scores[0] + scores[1];
+				if((sumScores < 20 && sumScores % 2 == 0) || sumScores > 20) {
+					if(currentServer == 0) {
+						currentServer = 1;
+					} else {
+						currentServer = 0;
+					}
 				}
 			}
 		} else {
