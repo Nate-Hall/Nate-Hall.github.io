@@ -7,10 +7,6 @@
  <meta charset="UTF-8"/>
   <title>Ping Pong Scoreboard</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <?php
-  	$p1Score = 0;
-  	$p2Score = 0;
-  ?>
  
 </head>
  
@@ -39,15 +35,15 @@
 	 
 	      <div id="Player1Score">
 	 
-	        <h1>0</h1>
+	        <h1 id="P1ScoreLabel">0</h1>
 	 
 	      </div>
 	 
 
 	 	  <div id="Player1Buttons">
 	 
-	        <button type="button" class="Buttons PlusButton" name="P1PlusButton">+</button>
-	        <button type="button" class="Buttons" name="P1MinusButton">-</button>
+	        <button type="button" class="Buttons PlusButton" name="P1PlusButton" onclick="AddPoint(1, 0)">+</button>
+	        <button type="button" class="Buttons" name="P1MinusButton" onclick="AddPoint(-1, 0)">-</button>
 
 	      </div>
 	      
@@ -56,14 +52,14 @@
 	 	  
 	 	  <div id="Player2Score">
 	 
-	        <h1>0</h1>
+	        <h1 id="P2ScoreLabel">0</h1>
 	 
 	      </div>
 
 	      <div id="Player2Buttons">
 	 
-	        <button type="button" class="Buttons PlusButton" name="P2PlusButton">+</button>
-	        <button type="button" class="Buttons" name="P2MinusButton">-</button>
+	        <button type="button" class="Buttons PlusButton" name="P2PlusButton" onclick="AddPoint(1, 1)">+</button>
+	        <button type="button" class="Buttons" name="P2MinusButton" onclick="AddPoint(-1, 1)">-</button>
 	 
 	      </div>
 		 
@@ -71,7 +67,12 @@
 	</div>
  
   </div>
+  <div id="ResetDiv">
+  	<button type="button" id="ResetButton" onclick="ResetGame()">RESET</button>
+  </div>
  
+
+ <script src="pingPongLogic.js"></script>
 </body>
  
 </html>

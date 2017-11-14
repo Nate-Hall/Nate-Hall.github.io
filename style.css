@@ -72,3 +72,15 @@ body {
 	border: 1px solid red;
 	border-radius: 30px;
 }
+
+#ResetDiv {
+	clear: both;
+	width: 10%;
+	padding: 5% 45%;
+}
+
+#ResetButton {
+	float: center;
+	width: 100%;
+	padding: 10%;
+}
