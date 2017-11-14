@@ -18,17 +18,19 @@ body {
 }
 
 #PlayerNames {
-	width: 50%;
-	padding: 0% 25%;
+	width: 70%;
+	padding: 0% 15%;
 }
 
 #Player1Name {
+	width: 50%;
 	float: left;
 	background-color: #F6F6F6;
 	color: blue;
 }
 
 #Player2Name {
+	width: 50%;
 	float: right;
 	background-color: #F6F6F6;
 	color: red;
